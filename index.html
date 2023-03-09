@@ -34,94 +34,77 @@
             </a>
           </li>
           <li>
-
-          </li>
-
-
-
-        </ul>
-
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item navigation-item-drop">
-            <button class="navigation-link nav-catalog user-popup drop">
-             Каталог
-             <span class="drop-arrow"></span>
-           </button>
-            <ul class="drop-list">
-             <li class="drop-item">
-              <a href="#" class="drop-link">Новинки</a>
-             </li>
-             <li class="drop-item">
-              <a href="catalog.html" class="drop-link">Сливочное</a>
-             </li>
-             <li class="drop-item">
-              <a href="#" class="drop-link">Щербеты</a>
-             </li>
-             <li class="drop-item">
-              <a href="#" class="drop-link">Фруктовый лед</a>
-             </li>
-             <li class="drop-item">
-              <a href="#" class="drop-link">Мелорин</a>
-             </li>
-            </ul>
-
-           </li>
-          <li class="main-navigation-item">
-           <a href="#" class="navigation-link nav-delivery-pay user-popup">Доставка и оплата</a>
-          </li>
-          <li class="main-navigation-item">
-            <a href="#" class="navigation-link nav-about-us user-popup">О компании</a>
-           </li>
-        </ul>
-
-        <ul class="navigation-user">
-          <li class="navigation-user-item">
-            <a href="tel:+78005558628" class="tel-link">+7 800 555-86-28</a>
-          </li>
-          <li class="navigation-user-item user-item-search">
-            <button type="button" class="user-search user-popup">
-              <span class="visually-hidden">Поиск по сайту</span>
-              <span class="user-search-mask"></span>
-            </button>
-            <div class="popup-search">
-              <form class="popup-search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input type="search" class="input-delivery index-input" placeholder="Поиск по сайту">
-              </form>
-            </div>
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="label-search visually-hidden">Поиск по сайту</label>
+              <input class="field-search" placeholder="Поиск по сайту" type="search" name="site-search" id="site-search" required>
+              <button class="search-button button-transparent" type="submit">Найти</button>
+            </form>
           </li>
           <li class="navigation-user-item user-item-login">
             <button type="button" class="user-login  user-popup">
               <span class="user-login-mask"></span>
-              <span>Вход</span>
+              <span class="login-mask-text">Вход</span>
             </button>
             <div class="popup-login">
-              <h3 class="popup-title">Личный кабинет</h3>
+              <h3 class="popup-title-lk">Личный кабинет</h3>
               <form class="popup-login-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="input-delivery index-input" type="email"  placeholder="email@example.com" required>
-                <input class="input-delivery index-input password-input" type="password"   required>
-                <button class="popup-login-submit red-button" type="submit">Войти</button>
+                <input class="input-delivery index-input login-input" type="email"  value="email@example.com" required>
+                <input class="input-delivery index-input password-input" type="password" value="••••••" required>
+                <button class="btn btn-login btn-red" type="submit">Войти</button>
                 <div class="popup-login-helper">
-                  <a class="password-helper" href="#">Забыли пароль?</a>
-                  <a class="registration-helper" href="#">Регистрация</a>
+                  <a class="password-helper login-href" href="#">Забыли пароль?</a>
+                  <a class="registration-helper login-href" href="#">Регистрация</a>
                 </div>
              </form>
             </div>
           </li>
-          <li class="navigation-user-item">
-            <button type="button" class="user-basket  user-popup">
-              <span class="visually-hidden">Количество товаров в корзине</span>
-              <svg
-                width="16"
-                height="17"
-                viewBox="0 0 16 17"
-                focusable="false"
-                aria-hidden="true"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2 2.1a.7.7 0 0 0 0 1.3h1.7l.5 2.4 1 4.9A1.8 1.8 0 0 0 6.2 12h5.6a1.8 1.8 0 0 0 1.8-1.4l1-4.9a.7.7 0 0 0-.7-.8H4.6l-.5-2.4c0-.3-.3-.5-.6-.5H1.2Zm4.5 8.3-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" fill="#2D3440"/>
-              </svg>
-              <span>2 товара</span>
-            </button>
+        </ul>
+
+        <ul>
+          <li>
+            <ul>
+              <li>
+                <a href="#" class="navigation-link">Главная</a>
+              </li>
+              <li>
+                <a href="#" class="navigation-link">Компания</a>
+              </li>
+              <li>
+                <a href="#" class="navigation-link">Каталог</a>
+              </li>
+              <li>
+                <a href="#" class="navigation-link">Новости</a>
+              </li>
+              <li>
+                <a href="#" class="navigation-link">Спецпредложения</a>
+              </li>
+              <li>
+                <a href="#" class="navigation-link">Доставка</a>
+              </li>
+              <li>
+                <a href="#" class="navigation-link">Контакты</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <li>
+                <button type="button">
+                  <span class="visually-hidden">Избранное</span>
+                  <span class="user-fav-mask"></span>
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <span class="visually-hidden">Корзина</span>
+                  <span class="user-basket-mask"></span>
+                </button>
+              </li>
+              <li>
+                <button class="btn" type="button">Оформить заказ</button>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -129,6 +112,108 @@
     </header>
 
     <main class="container">
+
+      <section class="cards-and-slider">
+        <div>
+          <h3>Материалы</h3>
+          <a href="#">На любой вкус</a>
+          <img src="./images/materials.svg" width="90" height="90" alt="Материалы.">
+        </div>
+
+        <div>
+          <h3>Инструмент</h3>
+          <a href="#">На все случаи</a>
+          <img src="./images/drill.svg" width="90" height="90" alt="Дрель.">
+        </div>
+
+        <div>
+          <h3>Техника</h3>
+          <a href="#">Для стройки</a>
+          <img src="./images/machinery.svg" width="90" height="90" alt="Строительная техника.">
+        </div>
+
+        <div>
+          <h3>Скидки 50%</h3>
+          <a href="#">На 350 товаров</a>
+          <img src="./images/discount.svg" width="90" height="90" alt="Скидки.">
+        </div>
+
+        <div>
+          <h3>Доставка</h3>
+          <a href="#">Бесплатно</a>
+          <img src="./images/delivery.svg" width="90" height="90" alt="Доставка.">
+        </div>
+
+        <h2 class="visually-hidden">Слайдер</h2>
+          <div class="slider active-slide">
+            <div class="slide-wrap">
+              <h3 class="slide-title">Дрели</h3>
+              <p class="slide-text">Соседям на радость</p>
+              <a class="btn-slider" href="#">Открыть каталог</a>
+            </div>
+          </div>
+
+          <div class="slider">
+            <div class="slide-wrap">
+              <h3 class="slide-title">Перфораторы</h3>
+              <p class="slide-text">Соседям на радость</p>
+              <a class="btn-slider" href="#">Открыть каталог</a>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="slider-button slider-prev" type="button">
+              <svg width="16" height="16" viewBox="0 -1 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z" fill="#FCFCFC"/>
+                </svg>
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <svg width="16" height="16" viewBox="0 -1 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z" fill="#FCFCFC"/>
+                </svg>
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
+
+          <ol class="slide-point-list">
+            <li class="slide-point-item">
+              <button class="point-button active-point">
+                <span class="visually-hidden">Нежный пломбир с клубничным джемом</span>
+              </button>
+            </li>
+            <li class="slide-point-item">
+              <button class="point-button no-active-point">
+                <span class="visually-hidden">Сливочное мороженое со вкусом банана</span>
+              </button>
+            </li>
+            <li class="slide-point-item">
+              <button class="point-button no-active-point">
+                <span class="visually-hidden">Карамельный пломбир с маршмеллоу</span>
+              </button>
+            </li>
+          </ol>
+
+      </section>
+
+      <h2>Перфораторы</h2>
+
+      <section>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <section class="index-main-banner">
           <h2 class="visually-hidden">Слайдер</h2>
