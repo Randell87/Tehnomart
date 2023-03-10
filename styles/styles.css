@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Firasans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/firasans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT-Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT-Sans-italic";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ptsans-Italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  min-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.main-header {
+  margin: 0 auto;
+  width: 1400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-navigation {
+  width: 100%;
+}
+
+.main-navigation-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 700px 700px;
+  grid-template-rows: 44px;
+  grid-auto-flow: row;
+  width: 1400px;
+  align-items: center;
+  justify-items: end;
+}
+
+.navigation-adress-tel-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.header-text {
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans-italic";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #EE3643;
+  margin-right: auto;
+  margin-left: 117.5px;
+  margin-top: 0;
+}
+
+.about-us-adress {
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  color: #32425C;
+  margin-right: 35px;
+  margin-top: -3px;
+}
+
+.header-tel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.tel-mask {
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  mask-image: url("../images/phone.svg");
+  -webkit-mask-image: url("../images/phone.svg");
+  background-color: #293449;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+}
+
+.tel-link {
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #293449;
+  margin-right: 0;
+  text-decoration: none;
+  margin-right: 118px;
+  margin-top: -2px;
+}
+
+.user-navigation-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #293449;
+}
