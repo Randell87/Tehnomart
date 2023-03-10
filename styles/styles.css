@@ -160,4 +160,77 @@ body {
   flex-wrap: wrap;
   width: 100%;
   background-color: #293449;
+  padding-left: 115px;
+}
+
+.logo-header {
+  margin-top: -5px;
+}
+
+.search-li {
+  flex-grow: 1;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-mask {
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  mask-image: url("../images/search.svg");
+  -webkit-mask-image: url("../images/search.svg");
+  background-color: #293449;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+}
+
+.popup-login {
+  display: none;
+}
+
+.user-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: transparent;
+  border: none;
+}
+
+.user-login-mask {
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  mask-image: url("../images/login.svg");
+  -webkit-mask-image: url("../images/login.svg");
+  background-color: #ffffff;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+}
+
+.login-mask-text {
+  font-family: "PT-Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #F1F5F7;
+  background-color: transparent;
 }
