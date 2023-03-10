@@ -17,7 +17,6 @@
           <span class="header-text">
             Интернет-магазин строительных материалов и инструментов для ремонта
           </span>
-
           <ul class="navigation-adress-tel-list">
             <li>
               <address class="about-us-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -27,29 +26,28 @@
               <a href="tel:+78125550555" class="tel-link">+7 (812) 555-05-55</a>
             </li>
           </ul>
-
         </ul>
 
         <ul class="user-navigation-list">
           <li>
-            <a href="index.html">
+            <a class="logo-header" href="index.html">
               <img src="./images/logo.svg" width="220" height="50" alt="Логотип Техномарт.">
             </a>
           </li>
-          <li>
+          <li class="search-li">
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="label-search visually-hidden">Поиск по сайту</label>
+              <span class="search-mask"></span>
               <input class="field-search" placeholder="Поиск по сайту" type="search" name="site-search" id="site-search" required>
-              <button class="search-button button-transparent" type="submit">Найти</button>
             </form>
           </li>
           <li class="navigation-user-item user-item-login">
-            <button type="button" class="user-login  user-popup">
+            <button type="button" class="user-login">
               <span class="user-login-mask"></span>
-              <span class="login-mask-text">Вход</span>
+              <span class="login-mask-text">Войти</span>
             </button>
             <div class="popup-login">
-              <h3 class="popup-title-lk">Личный кабинет</h3>
+              <h3 class="popup-title-lk visually-hidden">Личный кабинет</h3>
               <form class="popup-login-form" action="https://echo.htmlacademy.ru/" method="post">
                 <input class="input-delivery index-input login-input" type="email"  value="email@example.com" required>
                 <input class="input-delivery index-input password-input" type="password" value="••••••" required>
