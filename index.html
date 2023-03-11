@@ -8,7 +8,8 @@
   </head>
   <body>
     <header class="main-header">
-      <h1 class="visually-hidden">Главная страница Интернет-магазина строительных материалов и инструментов для ремонта Техномарт</h1>
+      <div class="header-wrap">
+        <h1 class="visually-hidden">Главная страница Интернет-магазина строительных материалов и инструментов для ремонта Техномарт</h1>
 
       <nav class="main-navigation">
         <h2 class="visually-hidden">Навигация сайта</h2>
@@ -26,44 +27,46 @@
             </li>
           </ul>
         </ul>
+      </nav>
+      </div>
 
-        <div class="user-navigation-wrap">
-          <ul class="user-navigation-list">
-            <li>
-              <a class="logo-header" href="index.html">
-                <img src="./images/logo.svg" width="220" height="50" alt="Логотип Техномарт.">
-              </a>
-            </li>
-            <li class="search-li">
-              <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="label-search visually-hidden">Поиск по сайту</label>
-                <span class="search-mask"></span>
-                <input class="field-search" placeholder="Поиск по сайту" type="search" name="site-search" id="site-search" required>
-              </form>
-            </li>
-            <li class="navigation-user-item user-item-login">
-              <button type="button" class="user-login">
-                <span class="user-login-mask"></span>
-                <span class="login-mask-text">Войти</span>
-              </button>
-              <div class="popup-login">
-                <h3 class="popup-title-lk visually-hidden">Личный кабинет</h3>
-                <form class="popup-login-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <input class="input-delivery index-input login-input" type="email"  value="email@example.com" required>
-                  <input class="input-delivery index-input password-input" type="password" value="••••••" required>
-                  <button class="btn btn-login btn-red" type="submit">Войти</button>
-                  <div class="popup-login-helper">
-                    <a class="password-helper login-href" href="#">Забыли пароль?</a>
-                    <a class="registration-helper login-href" href="#">Регистрация</a>
-                  </div>
-               </form>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div class="user-navigation-wrap">
+        <ul class="user-navigation-list container">
+          <li>
+            <a class="logo-header" href="index.html">
+              <img src="./images/logo.svg" width="220" height="50" alt="Логотип Техномарт.">
+            </a>
+          </li>
+          <li class="search-li">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="label-search visually-hidden">Поиск по сайту</label>
+              <span class="search-mask"></span>
+              <input class="field-search" placeholder="Поиск по сайту" type="search" name="site-search" id="site-search" required>
+            </form>
+          </li>
+          <li class="navigation-user-item user-item-login">
+            <button type="button" class="user-login">
+              <span class="user-login-mask"></span>
+              <span class="login-mask-text">Войти</span>
+            </button>
+            <div class="popup-login">
+              <h3 class="popup-title-lk visually-hidden">Личный кабинет</h3>
+              <form class="popup-login-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="input-delivery index-input login-input" type="email"  value="email@example.com" required>
+                <input class="input-delivery index-input password-input" type="password" value="••••••" required>
+                <button class="btn btn-login btn-red" type="submit">Войти</button>
+                <div class="popup-login-helper">
+                  <a class="password-helper login-href" href="#">Забыли пароль?</a>
+                  <a class="registration-helper login-href" href="#">Регистрация</a>
+                </div>
+             </form>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-
-        <ul class="second-navigation-list">
+      <div class="header-wrap-third">
+        <ul class="second-navigation-list container">
           <li>
             <ul class="main-menu-list">
               <li class="main-menu-item">
@@ -110,11 +113,12 @@
             </ul>
           </li>
         </ul>
-      </nav>
+      </div>
+
 
     </header>
 
-    <main class="container">
+    <main>
 
       <section class="cards-and-slider">
         <div class="cards-item card-material">
@@ -356,7 +360,7 @@
     </section>
 
     <section class="services">
-      <div class="services-wrap">
+      <div class="services-wrap container">
         <h2 class="services-title">Сервисы</h2>
         <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -401,7 +405,7 @@
     </section>
     </main>
 
-    <footer class="main-footer container">
+    <footer class="main-footer">
       <div class="page-footer-wrapper">
         <section class="about-us-footer">
           <div class="footer-left">
