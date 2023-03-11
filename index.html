@@ -395,53 +395,61 @@
     </main>
 
     <footer class="main-footer container">
-      <section class="about-us-footer">
-        <div>
-          <a href="index.html">
-            <img src="./images/logo.svg" width="220" height="50" alt="Логотип Техномарт.">
-          </a>
-          <address class="about-us-adress">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          <a href="tel:+78125550555" class="tel-link">+7 (812) 555-05-55</a>
+      <div class="page-footer-wrapper">
+        <section class="about-us-footer">
+          <div class="footer-left">
+            <a class="footer-logo" href="index.html">
+              <img src="./images/logo-footer.svg" width="220" height="56" alt="Логотип Техномарт.">
+            </a>
+            <address class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+            <a href="tel:+78125550555" class="tel-link-footer">+7 (812) 555-05-55</a>
 
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="btn-social button-pin" href="#">
-                <span class="visually-hidden">Pinterest</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="btn-social button-vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="btn-social button-vsco" href="#">
-                <span class="visually-hidden">VSCO</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <div>
-            <p>Обратная связь:</p>
-            <a href="mailto:mail@htmlacademy.ru"></a>
+            <ul class="social-list">
+              <li class="social-item">
+                <a class="btn-social button-pin" href="#">
+                  <span class="visually-hidden">Pinterest</span>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="btn-social button-vk" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="btn-social button-vsco" href="#">
+                  <span class="visually-hidden">VSCO</span>
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <div>
-            <p>Получайте лучшие предложения</p>
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-              <button class="newsletter-button" type="submit"></button>
-            </form>
-          </div>
-        </div>
-      </section>
+          <div class="footer-right">
+            <div class="feedback-block">
+              <p class="feedback">Обратная связь:</p>
+              <a class="mail-to" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
 
-      <section class="about-developer-footer">
-        <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
-        <p>Разработано - <a href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
-      </section>
+            <div class="newsletter-block">
+              <p class="newsletter-text">Получайте лучшие предложения</p>
+              <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="newsletter-field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+                <button class="newsletter-button" type="submit">
+                  <span class="newsletter-mask"></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="page-footer-wrapper-down">
+        <section class="about-developer-footer">
+          <p class="footer-about-company">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+          <p  class="footer-developer">Разработано — <a class="footer-academy" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
+        </section>
+      </div>
+
     </footer>
 
   </body>
