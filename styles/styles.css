@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "Firasans-bold";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/firasans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
   font-family: "PT-Sans";
   font-style: normal;
   font-weight: 400;
@@ -21,6 +29,8 @@
   src: url("../fonts/ptsans-Italic.woff2") format("woff2");
   font-display: swap;
 }
+
+
 
 .visually-hidden {
   position: absolute;
@@ -295,6 +305,71 @@ body {
 
 
 
+
+
+
+.about-us {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 41px;
+  gap: 150px;
+}
+
+.about-company {
+  max-width: 520px;
+  margin-left: 1.5px;
+}
+
+.company-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Firasans-bold";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  line-height: 97%;
+  display: flex;
+  color: #293449;
+  margin-bottom: 26px;
+  text-transform: uppercase;
+}
+
+.company-text {
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  color: #293449;
+  margin-bottom: 31px;
+}
+
+.text-techno {
+  margin-bottom: 63px;
+}
+
+.btn-red {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  /*display: flex;*/
+  color: #FFFFFF;
+  background-color: #EE3643;
+  padding: 14px 42px 13px 45px;
+  margin-top: 53px;
+  letter-spacing: 2px;
+}
 
 .main-footer {
   background-color: #32425C;
