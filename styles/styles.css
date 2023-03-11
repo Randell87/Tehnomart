@@ -306,14 +306,133 @@ body {
 
 
 
+.services {
+  background-color: #F4F7F9;
+}
 
+.services-wrap {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Firasans-bold";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  color: #293449;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.services-text {
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  color: #293449;
+  max-width: 560px;
+  margin-bottom: 64px;
+  margin-left: 17px;
+}
+
+.index-services {
+  display: grid;
+  grid-template-columns: 370px 370px 370px;
+  gap: 30px;
+  margin-bottom: 52px;
+}
+
+.service-item {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  padding-top: 24px;
+  padding-left: 31px;
+  padding-right: 35px;
+  padding-bottom: 20px;
+  min-height: 338px;
+}
+
+.service-mask {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  background-color: #CA2C37;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  margin-bottom: 50px;
+}
+
+.delivery-mask {
+  mask-image: url("../images/service-delivery.svg");
+  -webkit-mask-image: url("../images/service-delivery.svg");
+}
+
+.garanty-mask {
+  mask-image: url("../images/service-garanty.svg");
+  -webkit-mask-image: url("../images/service-garanty.svg");
+  margin-top: -1px;
+}
+
+.credit-mask {
+  mask-image: url("../images/service-credit.svg");
+  -webkit-mask-image: url("../images/service-credit.svg");
+  margin-top: -1px;
+}
+
+.service-title {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  line-height: 97%;
+  color: #32425C;
+  margin-bottom: 24px;
+}
+
+.service-text {
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  color: #000000;
+  max-width: 300px;
+}
+
+.text-garanty {
+  margin-left: 5px;
+}
 
 .about-us {
   width: 1170px;
   margin: 0 auto;
   display: flex;
-  padding-bottom: 41px;
+  padding-bottom: 42px;
   gap: 150px;
+  margin-top: 56px;
 }
 
 .about-company {
@@ -347,6 +466,10 @@ body {
   display: flex;
   color: #293449;
   margin-bottom: 31px;
+}
+
+.text-techno-first {
+  margin-bottom: 25px;
 }
 
 .text-techno {
