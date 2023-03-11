@@ -435,6 +435,22 @@ body {
   background-color: #FFBF47;
 }
 
+.card-tools {
+  background-color: #3BBCE3;
+}
+
+.card-machinary {
+  background-color: #DC91D8;
+}
+
+.card-discount {
+  background-color: #8ED78F;
+}
+
+.card-delivery {
+  background-color: #FFBF47;
+}
+
 .cards-title {
   text-transform: uppercase;
   text-decoration: none;
