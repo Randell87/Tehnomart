@@ -32,8 +32,8 @@
 
       <div class="user-navigation-wrap">
         <ul class="user-navigation-list container">
-          <li>
-            <a class="logo-header" href="index.html">
+          <li class="logo-header">
+            <a  href="index.html">
               <img src="./images/logo.svg" width="220" height="50" alt="Логотип Техномарт.">
             </a>
           </li>
@@ -41,7 +41,7 @@
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="label-search visually-hidden">Поиск по сайту</label>
               <span class="search-mask"></span>
-              <input class="field-search" placeholder="Поиск по сайту" type="search" name="site-search" id="site-search" required>
+              <input class="field-search" placeholder="Поиск:" type="search" name="site-search" id="site-search" required>
             </form>
           </li>
           <li class="navigation-user-item user-item-login">
@@ -96,19 +96,19 @@
           <li>
             <ul class="user-buttons">
               <li>
-                <button type="button">
+                <button class="btn-fav" type="button">
                   <span class="visually-hidden">Избранное</span>
                   <span class="user-fav-mask"></span>
                 </button>
               </li>
               <li>
-                <button type="button">
+                <button class="btn-basket" type="button">
                   <span class="visually-hidden">Корзина</span>
                   <span class="user-basket-mask"></span>
                 </button>
               </li>
               <li>
-                <button class="btn" type="button">Оформить заказ</button>
+                <button class="btn-green" type="button">Оформить заказ</button>
               </li>
             </ul>
           </li>
@@ -121,10 +121,12 @@
     <main>
 
       <section class="cards-and-slider">
-        <div class="cards-item card-material">
+        <div class="cards-item card-material new">
           <h3 class="cards-title">Материалы</h3>
           <a  class="cards-text" href="#">
-            <span class="arrow-mask"></span>На любой вкус</a>
+            <span class="arrow-mask"></span>
+            <span class="link-text">На любой вкус</span>
+          </a>
           <img class="cards-img" src="./images/materials.svg" width="90" height="90" alt="Материалы.">
         </div>
 
