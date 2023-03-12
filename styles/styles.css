@@ -419,7 +419,7 @@ body {
   display: grid;
   grid-template-columns: 370px 370px 370px;
   grid-template-rows: 180px 180px 180px;
-  gap: 30px;
+  gap: 29px 30px ;
 }
 
 .cards-item {
@@ -441,14 +441,17 @@ body {
 
 .card-machinary {
   background-color: #DC91D8;
+  margin-top: -1px;
 }
 
 .card-discount {
   background-color: #8ED78F;
+  margin-top: -1px;
 }
 
 .card-delivery {
   background-color: #FFBF47;
+  margin-top: -1px;
 }
 
 .cards-title {
@@ -482,7 +485,7 @@ body {
   letter-spacing: 2px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
-  max-width: 180px;
+  width: 180px;
 }
 
 .arrow-mask {
@@ -527,6 +530,218 @@ body {
   background-position: center;
   z-index: 2;
 }
+
+.slider-block {
+  margin: 0;
+  margin-top: -2px;
+  padding: 0;
+  grid-area: 2 / 1 / 4 / 3;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  width: 770px;
+  height: 390px;
+  background-color: #7fffd4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  display: none;
+}
+
+.slider-1 {
+  background-image: url("../images/slide-1.jpg");
+}
+
+.slider-2 {
+  background-image: url("../images/slider-2.jpg");
+}
+
+.active-slide {
+  display: block;
+}
+
+.slide-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 390px;
+  box-sizing: border-box;
+  padding: 50px 180px 40px 50px;
+}
+
+.slide-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Firasans-bold";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  color: #ffffff;
+  margin-bottom: 11px;
+  text-transform: uppercase;
+}
+
+.slide-text {
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans-bold";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  flex-grow: 1;
+}
+
+.btn-slider {
+  margin-bottom: auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans-bold";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  /*display: flex;*/
+  color: #FFFFFF;
+  background-color: #EE3643;
+  padding: 13px 23px 14px 24px;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  align-self: self-start;
+}
+
+.slider-controls {
+  width: 730px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 180px;
+  left: 20px;
+  outline: none;
+}
+
+.slider-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: rgba(41, 52, 73, 0.6);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.slider-button:hover {
+  background-color: #fcfcfc;
+}
+
+.slider-button:hover path {
+  fill: #2d3440;
+}
+
+.slider-button:focus {
+  border: 2px solid #2d3440;
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: none;
+}
+
+.slider-button:focus path {
+  fill: #2d3440;
+}
+
+.slider-button:active {
+  border: 2px solid transparent;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.slider-button:active path {
+  fill: #2d3440;
+}
+
+.slider-button:disabled {
+  border: 2px solid #fcfcfc;
+  background-color: rgba(252, 252, 252, 0.3);
+  opacity: 0.4;
+}
+
+.slider-button:disabled path {
+  fill: #fcfcfc;
+}
+
+.slide-point-list {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+  width: 40px;
+  justify-content: space-between;
+  position: absolute;
+  top: 354px;
+  left: 365px;
+  outline: none;
+}
+
+.point-button {
+  margin: 0;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #fcfcfc;
+  border: none;
+  border-radius: 50%;
+}
+
+.active-point:focus {
+  outline: none;
+}
+
+.no-active-point {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.no-active-point:hover {
+  opacity: 1;
+  background-color: rgba(252, 252, 252, 0.3);
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px #fcfcfc;
+}
+
+.no-active-point:focus {
+  opacity: 1;
+  background-color: rgba(252, 252, 252, 0.3);
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px #2d3440;
+  outline: none;
+}
+
+.no-active-point:active {
+  opacity: 0.5;
+  background-color: #fcfcfc;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.no-active-point:disabled {
+  opacity: 1;
+  background-color: rgba(252, 252, 252, 0.3);
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px #2d3440;
+}
+
+
+
+
+
+
+
 
 
 
