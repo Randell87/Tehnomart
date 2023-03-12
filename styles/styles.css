@@ -419,7 +419,8 @@ body {
   display: grid;
   grid-template-columns: 370px 370px 370px;
   grid-template-rows: 180px 180px 180px;
-  gap: 29px 30px ;
+  gap: 29px 30px;
+  margin-bottom: 49px;
 }
 
 .cards-item {
@@ -736,7 +737,239 @@ body {
   box-shadow: inset 0 0 0 1px #2d3440;
 }
 
+.filter-and-perfs-wrap {
+  display: flex;
+}
 
+.filter {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-right: 74px;
+}
+
+.main-theme {
+  margin: 0;
+  padding: 0;
+  font-family: "Firasans-bold";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #293449;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.inner-header-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 44px;
+  gap: 16px 24px;
+}
+
+.filter-group {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: none;
+  border: none;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 24px;
+}
+
+.filter-title {
+  font-family: "PT-Sans-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  margin-left: -1.5px;
+}
+
+.range-background {
+  width: 220px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #F7F3EC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  width: 180px;
+  background-color: #3D546F;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #5FBB2D;
+  width: 64px;
+  left: 20px;
+}
+
+.range-toggle {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #3D546F;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+.range-toggle:hover {
+  border: 2px solid #fcfcfc;
+  background-color: #2d3440;
+}
+
+.range-toggle:focus {
+  border: 2px solid #fcfcfc;
+  background-color: #2d3440;
+  outline: 2px solid #2d3440;
+}
+
+.range-toggle:active {
+  border: 2px solid #2d3440;
+  background-color: #2d3440;
+}
+
+.toggle-min {
+  top: -9px;
+  left: -21px;
+}
+
+.toggle-max {
+  top: -10px;
+  right: -6px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-input {
+  width: 95px;
+  height: 40px;
+  background-color: #F7F3EC;
+  border: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+  font-family: "PT-Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  text-align: center;
+  padding-left: 18px;
+}
+
+.minus {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.checkbox-list {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  box-sizing: border-box;
+  /*padding: 8px 24px;*/
+  justify-content: space-between;
+  /*padding-bottom: 2px;*/
+}
+
+.checkbox-label {
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans";
+  color: #000000;
+  background-color: transparent;
+  margin-bottom: 8px;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  display: block;
+  cursor: pointer;
+}
+
+.checkbox-item {
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  /*padding-left: 24px;
+  margin-right: 17px;*/
+}
+
+.checkbox-item:last-child {
+  /*padding-left: 23px;
+  margin-right: 2px;*/
+}
+
+.checkbox-label::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  top: 4px;
+  left: -24px;
+  mask-image: url("../images/unchecked.svg");
+  -webkit-mask-image: url("../images/unchecked.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  background-color: #2d3440;
+}
+
+.checkbox-input[type="checkbox"]:checked + .checkbox-label::before {
+  mask-image: url("../images/checked.svg");
+  -webkit-mask-image: url("../images/checked.svg");
+}
+
+.checkbox-label:hover::before {
+  background-color: #fcfcfc;
+}
+
+.checkbox-item:focus-within .checkbox-label::before {
+  background-color: #fcfcfc;
+  opacity: 0.9;
+}
+
+.checkbox-label:active::before {
+  background-color: #fcfcfc;
+  opacity: 0.3;
+}
+
+.checkbox-label:disabled::before {
+  background-color: #2d3440;
+  opacity: 0.5;
+}
 
 
 
