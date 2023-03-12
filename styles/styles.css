@@ -1083,6 +1083,38 @@ body {
   padding-top: 1px;
 }
 
+.sorting-and-goods {
+  margin-top: 32px;
+  margin-left: 5px;
+}
+
+.sorting-select {
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid #3D546F;
+  padding: 6px 15px;
+  padding-right: 41px;
+  color: #293449;
+  font-family: "PT-Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  appearance: none;
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 255px;
+  cursor: pointer;
+  outline: none;
+  width: 280px;
+}
+
+.sorting-select:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.sorting-select:focus {
+  border: 2px solid #fcfcfc;
+}
 
 
 
