@@ -376,12 +376,19 @@ body {
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-  gap: 46px;
+  gap: 8px;
   display: flex;
   flex-direction: row;
-  margin-top: 19px;
-  margin-bottom: 27px;
-  margin-left: 4px;
+  /*padding-top: 19px;
+  padding-bottom: 27px;*/
+  margin-left: -15px;
+}
+
+.main-menu-item {
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 19px;
+  padding-bottom: 27px;
 }
 
 .user-buttons {
@@ -481,6 +488,24 @@ body {
   display: flex;
   align-items: center;
   color: #FFFFFF;
+}
+
+.main-menu-item:hover {
+  background-color: #32425C;
+}
+
+.main-menu-item:hover .navigation-link{
+  color: #C5C5C5;
+}
+
+.main-menu-item:active {
+  background-color: #32425C;
+}
+
+.main-menu-item:active .navigation-link{
+  font-family: "PT-Sans-bold";
+  color: #FFFFFF;
+  margin-right: -1px;
 }
 
 .cards-and-slider {
@@ -1037,7 +1062,7 @@ body {
   -webkit-mask-repeat: no-repeat;
   mask-position: center;
   -webkit-mask-position: center;
-  background-color: #3D546F;
+  background-color: #32425C;
 }
 
 .checkbox-input[type="checkbox"]:checked + .checkbox-label::before {
@@ -1046,7 +1071,7 @@ body {
 }
 
 .checkbox-label:hover::before {
-  background-color: #000000;
+  background-color: rgba(50, 66, 92, 0.6);
 }
 
 .checkbox-item:focus-within .checkbox-label::before {
@@ -1060,9 +1085,15 @@ body {
 }
 
 .checkbox-label:disabled::before {
-  background-color: #2d3440;
-  opacity: 0.5;
+  background-color: #000000;
+  opacity: 0.4;
 }
+
+.checkbox-input:disabled ~ .checkbox-label{
+  color: #000000;
+  opacity: 0.4;
+}
+
 
 .group-power {
   margin-left: 3px;
@@ -1128,7 +1159,7 @@ body {
 }
 
 .radio-label:hover::before {
-  background-color: #000000;
+  background-color: #3D546F;
 }
 
 .radio-item:focus-within .radio-label::before {
@@ -1146,8 +1177,13 @@ body {
 }
 
 .radio-label:disabled::before {
-  background-color: #2d3440;
-  opacity: 0.5;
+  background-color: #000000;
+  opacity: 0.4;
+}
+
+.radio-input:disabled ~ .radio-label{
+  color: #000000;
+  opacity: 0.4;
 }
 
 .btn-trans {
@@ -1213,11 +1249,12 @@ body {
 }
 
 .sorting-select:hover {
-  background-color: rgba(252, 252, 252, 0.5);
+  border: 1px solid #63A63E;
 }
 
 .sorting-select:focus {
   border: 1px solid #518534;
+  outline: 1px solid #FFBF47;
 }
 
 .goods-list {
@@ -1302,6 +1339,7 @@ body {
   border-radius: 4px;
   position: relative;
   max-width: 139px;
+  text-decoration: none;
 }
 
 .item-price::after {
@@ -1314,6 +1352,22 @@ body {
   background-color: #EE3643;
   border-radius: 4px;
   transform: rotate(45deg);
+}
+
+.item-price:hover {
+  background-color: #CA2C37;
+}
+
+.item-price:hover:after {
+  background-color: #CA2C37;
+}
+
+.item-price:active {
+  background-color: #BA2732;
+}
+
+.item-price:active:after {
+  background-color: #BA2732;
 }
 
 .new-goods::after{
