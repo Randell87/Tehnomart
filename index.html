@@ -45,20 +45,35 @@
               <input class="field-search" placeholder="Поиск по сайту" type="search" name="site-search" id="site-search" required>
             </form>
           </li>
+          <li class="navigation-user-item user-item-logout">
+            <button type="button" class="user-logout">
+              <span class="user-mask"></span>
+              <span class="logout-mask-text">Равшан Джамшутович</span>
+              <span class="user-logout-mask"></span>
+            </button>
+          </li>
           <li class="navigation-user-item user-item-login">
             <button type="button" class="user-login">
               <span class="user-login-mask"></span>
               <span class="login-mask-text">Войти</span>
             </button>
             <div class="popup-login">
-              <h3 class="popup-title-lk visually-hidden">Личный кабинет</h3>
+              <h3 class="popup-title-lk">Личный кабинет</h3>
               <form class="popup-login-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="input-delivery index-input login-input" type="email"  value="email@example.com" required>
-                <input class="input-delivery index-input password-input" type="password" value="••••••" required>
-                <button class="btn btn-login btn-red" type="submit">Войти</button>
+                <input class="login-input" type="text"  placeholder="Логин" required>
+                <input class="password-input" type="password" placeholder="Пароль" required>
+                <ul class="checkbox-list-row">
+                  <li class="checkbox-item">
+                    <input class="checkbox-input visually-hidden" type="checkbox" id="memory" name="memory" checked>
+                    <label class="checkbox-label" for="memory">Запомнить меня</label>
+                  </li>
+                  <li>
+                    <a class="password-helper login-href" href="#">Забыл пароль</a>
+                  </li>
+                </ul>
                 <div class="popup-login-helper">
-                  <a class="password-helper login-href" href="#">Забыли пароль?</a>
-                  <a class="registration-helper login-href" href="#">Регистрация</a>
+                  <button class="btn-green" type="submit">Войти</button>
+                  <a class="registration-helper item-favorit" href="#">Регистрация</a>
                 </div>
              </form>
             </div>
@@ -100,12 +115,14 @@
                 <button class="btn-fav" type="button">
                   <span class="visually-hidden">Избранное</span>
                   <span class="user-fav-mask"></span>
+                  <span class="user-fav-number">12</span>
                 </button>
               </li>
               <li>
                 <button class="btn-basket" type="button">
                   <span class="visually-hidden">Корзина</span>
                   <span class="user-basket-mask"></span>
+                  <span class="user-basket-number">3</span>
                 </button>
               </li>
               <li>
@@ -585,13 +602,6 @@
               </li>
               <li class="social-item">
                 <a class="btn-social button-vsco" href="#">
-                  <span class="visually-hidden">VSCO</span>
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="btn-soc" href="#">
-                  <span class="vsco-mask"></span>
-                  <span class="soc-back"></span>
                   <span class="visually-hidden">VSCO</span>
                 </a>
               </li>
