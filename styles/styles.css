@@ -1931,6 +1931,10 @@ body {
   margin-bottom: 19px;
 }
 
+.mail-to:hover {
+  color: #FFBF47;
+}
+
 .newsletter-block{
   display: flex;
   flex-direction: column;
@@ -2050,4 +2054,62 @@ body {
   line-height: 18px;
   color: #FFD180;
   text-decoration: none;
+}
+
+.footer-academy:hover {
+  color: #FFBF47;
+}
+
+
+
+
+
+
+
+.btn-soc {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  margin-right: 5px;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.btn-soc:hover {
+  background-color: #293449;
+}
+
+.btn-soc:focus {
+  opacity: 0.7;
+}
+
+.btn-soc:active {
+  opacity: 0.5;
+}
+
+.vsco-mask {
+  width: 23px;
+  height: 23px;
+  mask-image: url("../images/vsco-icon.svg");
+  -webkit-mask-image: url("../images/vsco-icon.svg");
+  background-color: #ffffff;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  cursor: pointer;
+  background-image: url("../images/vsco-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.soc-back {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
