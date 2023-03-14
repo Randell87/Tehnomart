@@ -105,9 +105,11 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: 661px 700px;
-  grid-template-rows: 44px;
+  /*grid-template-rows: 44px;*/
   grid-auto-flow: row;
   align-items: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .navigation-adress-tel-list {
