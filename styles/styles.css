@@ -8,7 +8,6 @@
 
 @font-face {
   font-family: "Firasans-bold";
-  font-style: bold;
   font-weight: 700;
   src: url("../fonts/firasans-bold.woff2") format("woff2");
   font-display: swap;
@@ -32,7 +31,6 @@
 
 @font-face {
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   src: url("../fonts/ptans-bold.woff2") format("woff2");
   font-display: swap;
@@ -570,7 +568,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -682,7 +679,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -699,7 +695,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -806,7 +801,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Firasans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -820,7 +814,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -835,7 +828,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -991,7 +983,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Firasans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -1318,7 +1309,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -1425,7 +1415,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -1439,7 +1428,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -1455,7 +1443,6 @@ body {
   padding: 11px 26px 11px 28px;
   margin-left: -22px;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -1538,7 +1525,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -1577,7 +1563,6 @@ body {
 
 .buy-text {
   padding-bottom: 0;
-  padding-left: -3px;
 }
 
 .item-favorit {
@@ -1586,7 +1571,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -1613,9 +1597,6 @@ body {
 
 .pagination-container {
   display: flex;
-  /*padding: 39px 70px 60px 0;
-  margin-left: 70px;
-  margin-right: 62px;*/
   justify-content: center;
   margin-left: 5px;
 }
@@ -1634,7 +1615,6 @@ body {
 
 .pagination-item:last-child {
   margin-left: 9px;
-  /*max-width: 60px;*/
 }
 
 .pagination-link {
@@ -1682,34 +1662,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  /*display: flex;*/
   color: #FFFFFF;
   background-color: #EE3643;
   padding: 14px 36px 13px 39px;
   letter-spacing: 2px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .services {
   background-color: #F4F7F9;
@@ -1727,7 +1687,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Firasans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -1806,7 +1765,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans";
-  font-style: bold;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -1851,7 +1809,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Firasans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -1889,7 +1846,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -2417,7 +2373,6 @@ body {
   padding-top: 4px;
   padding-left: 5.5px;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -2579,7 +2534,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -2617,7 +2571,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -2654,7 +2607,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -2677,7 +2629,6 @@ body {
   padding-top: 4px;
   padding-left: 5.5px;
   font-family: "PT-Sans-bold";
-  font-style: bold;
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
