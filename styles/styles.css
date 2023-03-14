@@ -633,7 +633,7 @@ body {
   grid-auto-flow: row;
   /*grid-auto-rows: 180px;*/
   gap: 29px 30px;
-  margin-bottom: 49px;
+  margin-bottom: 50px;
 }
 
 .cards-item {
@@ -1974,6 +1974,8 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
+  margin-left: 4px;
+  margin-top: 21px;
 }
 
 .btn-social {
@@ -2217,18 +2219,58 @@ body {
   opacity: 0.5;
 }
 
-.vsco-mask {
-  width: 23px;
-  height: 23px;
-  mask-image: url("../images/vsco-icon.svg");
-  -webkit-mask-image: url("../images/vsco-icon.svg");
+
+.pin-mask {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 3.5px;
+  mask-image: url("../images/pin-icon.svg");
+  -webkit-mask-image: url("../images/pin-icon.svg");
   background-color: #ffffff;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-position: center;
   -webkit-mask-position: center;
   cursor: pointer;
-  background-image: url("../images/vsco-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.vk-mask {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 3.5px;
+  mask-image: url("../images/vk-icon.svg");
+  -webkit-mask-image: url("../images/vk-icon.svg");
+  background-color: #ffffff;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.vsco-mask {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 3.5px;
+  mask-image: url("../images/vsco-icon-test2.svg");
+  -webkit-mask-image: url("../images/vsco-icon-test2.svg");
+  background-color: #ffffff;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
   box-sizing: border-box;
@@ -2238,8 +2280,8 @@ body {
 .soc-back {
   position: absolute;
   left: -2px;
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
