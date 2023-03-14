@@ -138,6 +138,11 @@ body {
   max-width: 280px;
 }
 
+.map-link {
+  margin: 0;
+  padding: 0;
+}
+
 .header-tel {
   display: flex;
   flex-direction: row;
