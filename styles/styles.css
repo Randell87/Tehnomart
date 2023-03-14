@@ -2260,15 +2260,17 @@ body {
   background-color: #fcfcfc;
   padding: 0;
   margin: 0;
-  padding-top: 22px;
-  padding-left: 31px;
+  padding-top: 19px;
+  padding-left: 26px;
+  padding-right: 19px;
+  padding-bottom: 35px;
   box-sizing: border-box;
   flex-direction: column;
   z-index: 1;
-  right: 7px;
+  right: 8px;
   top: 13px;
   display: flex; /**/
-  filter: drop-shadow(0 15px 40px rgba(45, 52, 64, 0.12));
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 
 }
 
@@ -2277,35 +2279,7 @@ body {
   flex-wrap: wrap;
 }
 
-.popup-login-form input {
-  width: 100%;
-  margin-bottom: 16px;
-  padding-left: 14px;
-}
 
-.popup-login-form .password-input {
-  margin-bottom: 28px;
-  letter-spacing: -0.07em;
-}
-
-.login-input,
-.password-input {
-  color: #2d3440;
-}
-
-.btn-login {
-  margin: 0;
-  margin-right: 19px;
-  margin-left: -4px;
-}
-
-.popup-login-helper {
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  margin-top: 4px;
-  align-items: flex-start;
-}
 
 .popup-login-helper .password-helper,
 .popup-login-helper .registration-helper {
@@ -2332,16 +2306,235 @@ body {
 
 .checkbox-list-row {
   display: flex;
+  list-style-type: none;
+  margin-bottom: 7px;
+}
+
+.title-and-close {
+  display: flex;
+  justify-content: space-between;
 }
 
 .popup-title-lk {
   margin: 0;
   padding: 0;
+  padding-top: 4px;
+  padding-left: 5.5px;
   font-family: "PT-Sans-bold";
   font-style: bold;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
+}
+
+.popup-close-button {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../images/close.svg");
+  -webkit-mask-image: url("../images/close.svg");
+  background-color: #C4C4C4;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+}
+
+.login-input {
+  width: 300px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid #C5C5C5;
+  margin-bottom: 7px;
+  margin-left: 5px;
+  box-sizing: border-box;
+  padding-left: 13.5px;
+  font-family: "PT-Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.login-input::placeholder {
+  color: #000000;
+}
+
+.password-input {
+  width: 300px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid #C5C5C5;
+  margin-bottom: 7px;
+  margin-left: 5px;
+  box-sizing: border-box;
+  padding-left: 13.5px;
+  font-family: "PT-Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.password-input::placeholder {
+  color: #000000;
+}
+
+.checkbox-item-lk {
+  position: relative;
+}
+
+.checkbox-memory-label {
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans";
+  color: #000000;
+  background-color: transparent;
+  margin-bottom: 22px;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  display: block;
+  cursor: pointer;
+  margin-left: 1px;
+  position: relative;
+  padding-left: 3px;
+  margin-right: 24px;
+}
+
+.checkbox-memory-label::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: -1px;
+  left: -36px;
+  mask-image: url("../images/checkbox-light-off.svg");
+  -webkit-mask-image: url("../images/checkbox-light-off.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  background-color: #32425C;
+}
+
+.checkbox-input[type="checkbox"]:checked + .checkbox-memory-label::before {
+  mask-image: url("../images/checkbox-light-on.svg");
+  -webkit-mask-image: url("../images/checkbox-light-on.svg");
+}
+
+.checkbox-memory-label:hover::before {
+  background-color: rgba(50, 66, 92, 0.6);
+}
+
+.checkbox-item:focus-within .checkbox-memory-label::before {
+  background-color: #000000;
+  opacity: 0.9;
+}
+
+.checkbox-memory-label:active::before {
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+.checkbox-memory-label:disabled::before {
+  background-color: #000000;
+  opacity: 0.4;
+}
+
+.checkbox-input:disabled ~ .checkbox-memory-label{
+  color: #000000;
+  opacity: 0.4;
+}
+
+.password-helper {
+  font-family: "PT-Sans";
+  color: #000000;
+  background-color: transparent;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  display: block;
+  cursor: pointer;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.popup-login-helper {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.btn-green-enter {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans-bold";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #63A63E;
+  /*padding: 12px 11px 12px 13px;*/
+  letter-spacing: 2px;
+  border-radius: 2px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 145px;
+  min-height: 40px;
+}
+
+.popup-btn-green-mask {
+  padding-right: 31px;
+  margin-left: -25px;
+}
+
+.item-reg {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "PT-Sans-bold";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425C;
+  background-color: #ffffff;
+  /*padding: 9px 11px 12px 15px;*/
+  letter-spacing: 2px;
+  border: none;
+  margin-top: 10px;
+  border: 2px solid #63A63E;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 145px;
+  min-height: 40px;
+}
+
+.item-reg:hover {
+  border-color: #3D546F;
+}
+
+.item-reg:active {
+  border-color: #C5C5C5;
+  color: #C5C5C5;
 }

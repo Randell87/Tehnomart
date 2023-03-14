@@ -58,22 +58,28 @@
               <span class="login-mask-text">Войти</span>
             </button>
             <div class="popup-login">
-              <h3 class="popup-title-lk">Личный кабинет</h3>
+              <div class="title-and-close">
+                <h3 class="popup-title-lk">Личный кабинет</h3>
+                <span class="popup-close-button"></span>
+              </div>
               <form class="popup-login-form" action="https://echo.htmlacademy.ru/" method="post">
                 <input class="login-input" type="text"  placeholder="Логин" required>
                 <input class="password-input" type="password" placeholder="Пароль" required>
                 <ul class="checkbox-list-row">
-                  <li class="checkbox-item">
+                  <li class="checkbox-item checkbox-item-lk">
                     <input class="checkbox-input visually-hidden" type="checkbox" id="memory" name="memory" checked>
-                    <label class="checkbox-label" for="memory">Запомнить меня</label>
+                    <label class="checkbox-memory-label" for="memory">Запомнить меня</label>
                   </li>
                   <li>
                     <a class="password-helper login-href" href="#">Забыл пароль</a>
                   </li>
                 </ul>
                 <div class="popup-login-helper">
-                  <button class="btn-green" type="submit">Войти</button>
-                  <a class="registration-helper item-favorit" href="#">Регистрация</a>
+                  <button class="btn-green-enter" type="submit">
+                    <span class="user-login-mask popup-btn-green-mask"></span>
+                    <span class="login-mask-text">Войти</span>
+                  </button>
+                  <a class="registration-helper item-reg" href="#">Регистрация</a>
                 </div>
              </form>
             </div>
